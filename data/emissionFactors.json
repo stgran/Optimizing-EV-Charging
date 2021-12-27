@@ -1,0 +1,66 @@
+{
+    "defaults": {
+        "battery charge": {
+            "_comment": "Emissions are counted at discharge",
+            "source": "Tomorrow",
+            "value": 0
+        },
+        "battery discharge": {
+            "_comment": "As a default fallback, we use here the annual mean carbon intensity of all electricityMap zones",
+            "source": "World average intensity by Tomorrow",
+            "value": 301.13684338512996
+        },
+        "biomass": {
+            "source": "IPCC 2014",
+            "value": 230
+        },
+        "coal": {
+            "source": "IPCC 2014",
+            "value": 820
+        },
+        "gas": {
+            "source": "IPCC 2014",
+            "value": 490
+        },
+        "geothermal": {
+            "source": "IPCC 2014",
+            "value": 38
+        },
+        "hydro": {
+            "source": "IPCC 2014",
+            "value": 24
+        },
+        "hydro charge": {
+            "_comment": "Emissions are counted at discharge",
+            "source": "Tomorrow",
+            "value": 0
+        },
+        "hydro discharge": {
+            "_comment": "As a default fallback, we use here the annual mean carbon intensity of all electricityMap zones",
+            "source": "World average intensity by Tomorrow",
+            "value": 301.13684338512996
+        },
+        "nuclear": {
+            "source": "IPCC 2014",
+            "value": 12
+        },
+        "oil": {
+            "_comment": "UK Parliamentary Office of Science and Technology (2006) 'Carbon footprint of electricity generation'",
+            "source": "UK POST 2014",
+            "value": 650
+        },
+        "solar": {
+            "source": "IPCC 2014",
+            "value": 45
+        },
+        "unknown": {
+            "_comment": "assume conventional",
+            "source": "assumes thermal (coal, gas, oil or biomass)",
+            "value": 700
+        },
+        "wind": {
+            "source": "IPCC 2014",
+            "value": 11
+        }
+    }
+}
