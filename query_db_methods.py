@@ -3,20 +3,14 @@ import sqlite3
 from SQLiteStDev import StdevFunc
 
 def query_db(production_type, db_path, table_name):
-    # db_path = 'data/entsoe_2020_data.db'
-    
-    # table_name = 'entsoe'
+    '''
+    This function queries an SQLite database.
+    This function creates four subqueries for the four seasons
+    and then queries from the results of those subqueries.
 
-    production_type_clause = f'AVG({production_type}) AS {production_type}, stdev({production_type}) AS stdev{production_type}'
-    # if isinstance(production_types, list):
-    #     # production_type_clause = f'AVG({production_types[0]}) AS {production_types[0]}, stdev({production_types[0]}) AS {production_types[0]}StDev'
-    #     # for production_type in production_types[1:]:
-    #     #     production_type_clause = production_type_clause + f', AVG({production_type}) AS {production_type}, stdev({production_type}) AS {production_type}StDev'
-    #     production_type_clause = f'AVG({production_types[0]}) AS {production_types[0]}_{season}, stdev({production_types[0]}) AS stdev{production_types[0]}_{season}'
-    #     for production_type in production_types[1:]:
-    #         production_type_clause = production_type_clause + f', AVG({production_type}) AS {production_type}_{season}, stdev({production_type}) AS stdev{production_type}_{season}'
-    # elif isinstance(production_types, str):
-    #     production_type_clause = f'AVG({production_types}) AS {production_types}_{season}, stdev({production_types}) AS stdev{production_types}_{season}'
+    The table returned by this query contains an hours column, production results
+    by season, and standard deviation of those production results by season.
+    '''
 
     query = f'''
     WITH spring AS

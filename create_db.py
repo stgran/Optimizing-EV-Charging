@@ -4,20 +4,16 @@ import pandas as pd
 import json
 
 '''
-This script executes the entire process, including:
-- Importing data as a .csv
-- Cleaning the data
-- Creating a SQL database and inserting the data into the db
-- Querying the db
-- Analyzing the queried data
-- Visualizing the data and analyses
+During this step, two databases are created: a production database and an emissions database.
 
+The only difference between these two databases is that for the emissions data,
+the production data has been weighted by the respective emissions factor.
 '''
 
 def create_production_db():
+    # Sets up logging
     level = logging.DEBUG
     fmt = '[%(levelname)s] %(asctime)s - %(message)s'
-    # fmt = f'[{levelname}] {asctime} - {message}'
     logging.basicConfig(level=level, format=fmt)
 
     csv_path = 'data/actual_generation_per_production_type_2020.csv'
@@ -26,6 +22,7 @@ def create_production_db():
 
     production_table_name = 'entsoe_production'
 
+    # Key for changing column names
     column_names = {
         'Biomass  - Actual Aggregated [MW]': 'Biomass',
         'Fossil Gas  - Actual Aggregated [MW]': 'FossilGas',
