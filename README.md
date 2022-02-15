@@ -1,5 +1,5 @@
-# electricityMap Data Analyst Challenge
-This repository contains my work and answers for electricityMap's Data Analyst challenge, which is outlined in `electricityMap Data Analyst Challenge.pdf`.
+# Optimizing EV Charging
+This repository contains a mock report toward a Danish EV charging app about how my company can help their users charge their EVs with the greenest electricity, thus allowing their EVs to have the most positive environmental impact possible.
 
 ## Input Dataset
 The dataset contains data regarding how many megawatts (MW) of

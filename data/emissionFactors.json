@@ -6,7 +6,7 @@
             "value": 0
         },
         "battery discharge": {
-            "_comment": "As a default fallback, we use here the annual mean carbon intensity of all electricityMap zones",
+            "_comment": "As a default fallback, we use here the annual mean carbon intensity of all zones",
             "source": "World average intensity by Tomorrow",
             "value": 301.13684338512996
         },

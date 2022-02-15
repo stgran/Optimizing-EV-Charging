@@ -1,5 +1,5 @@
 # Report for Copenhagen-based Danish EV Charging App ('Client')
-We appreciate your interest in electricityMap. Even though how we accomplish our goals may not yet be clear, it is always exciting to meet another company who shares our commitment to reducing emissions from electricity. In this report, I hope to answer your questions and elucidate how we can support your "smart-charging" use case.
+We appreciate your interest in our company. Even though how we accomplish our goals may not yet be clear, it is always exciting to meet another company who shares our commitment to reducing emissions from electricity. In this report, I hope to answer your questions and elucidate how we can support your "smart-charging" use case.
 
 ## Why are there two electricity zones in Denmark (East Denmark and West Denmark)?
 Denmark has two electricity zones, also known as "bidding zones" - one for West Denmark (bidding zone DK1) and another for East Denmark (bidding zone DK2). This is because electricity in Denmark comes from two separate electrical grids: electricity in West Denmark comes from the Synchronous grid of Continental Europe while electricity in East Denmark comes from the Synchronous grid of Northern Europe.
